@@ -1,0 +1,19 @@
+
+.portfolio {
+  display: flex;
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+
+@media  screen and (max-width: 835px) {
+    .portfolio{
+        margin-top: 15px; 
+    }
+}
+
+@media  screen and (max-width: 435px) {
+    .portfolio{
+        margin-top: 2px; 
+    }
+}

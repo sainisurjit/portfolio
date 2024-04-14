@@ -1,10 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import MainContainer from "./components/Main/MainContainer";
 
 function App() {
-  return <div></div>;
+  return (
+    <div className="portfolio">
+      <MainContainer />
+    </div>
+  );
 }
 
 export default App;

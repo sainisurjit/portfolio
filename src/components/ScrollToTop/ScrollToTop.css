@@ -1,0 +1,57 @@
+.scroll-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.btn-scroll {
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+
+}
+
+.btn-scroll i{
+    font-size: 16px;
+    z-index: 4;
+}
+
+@media screen and (max-width: 1200px) {
+    .btn-scroll {
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .btn-scroll {
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+    }
+    .btn-scroll i{
+        font-size: 16px;
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+    .btn-scroll {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+    .btn-scroll i{
+        font-size: 16px;
+    }
+    
+}

@@ -1,0 +1,210 @@
+.education-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 20%;
+}
+.education-tagline {
+  font-size: 1.6em;
+  font-family: Pacifico;
+}
+
+.education-heading-title {
+  color: rgb(17, 16, 16);
+  font-family: Pacifico;
+  z-index: 2;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../../../Assets/ccchaos.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+:root {
+  --color1: #99acbd;
+  --color2: #7b8892;
+}
+
+.timeline-container {
+  display: flex;
+  width: 100%;
+  margin: 50px 0 50px 0;
+  justify-content: center;
+}
+.timeline-container .row {
+  width: 90%;
+}
+.main-timeline {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main-timeline:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main-timeline .timeline {
+  width: 50%;
+  float: left;
+  padding: 70px 0 0;
+  transition: transform 300ms ease-in-out;
+}
+.main-timeline .timeline-content {
+  color: #0d0c0c;
+  text-align: center;
+  padding: 30px 20px 20px;
+  border-radius: 10px;
+  display: block;
+  position: relative;
+}
+.main-timeline .timeline-content h3 {
+  text-transform: uppercase;
+  font-size: 1.7em;
+  font-weight: bolder !important;
+  color: var(--color2);
+}
+
+.timeline:nth-child(even):hover {
+  transform: rotate(-5deg);
+}
+.timeline:nth-child(odd):hover {
+  transform: rotate(5deg);
+}
+
+.timeline .title {
+  font-weight: bolder !important;
+}
+
+.main-timeline .timeline-year {
+  color: #fff;
+  background: linear-gradient(var(--color1), var(--color2));
+  font-size: 25px;
+  font-weight: 600;
+  padding: 40px 10px 5px;
+  border-radius: 5px 5px 0 0;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -50px;
+  right: -10px;
+}
+.main-timeline .timeline-year:before,
+.main-timeline .timeline-year:after {
+  content: "";
+  background: linear-gradient(var(--color1), var(--color2));
+  height: 33px;
+  border-radius: 30px/50px;
+  position: absolute;
+  left: -7px;
+  right: -1.5px;
+  top: -4px;
+}
+.main-timeline .timeline-year:after {
+  background: var(--color1);
+  width: 23px;
+  left: auto;
+}
+
+.main-timeline .description {
+  font-size: 1em;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.timeline-content .institute {
+  font-weight: bolder;
+  font-size: 1.1em;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #ec34c1, #0a47e1);
+}
+.main-timeline .timeline:nth-child(even) {
+  float: right;
+  margin: 0 0 0 10px;
+}
+
+.main-timeline .timeline:nth-child(even) .timeline-year {
+  transform: rotate(-20deg);
+  right: auto;
+  left: -10px;
+}
+.main-timeline .timeline:nth-child(even) .timeline-year:before,
+.main-timeline .timeline:nth-child(even) .timeline-year:after {
+  right: -7px;
+  left: -1.5px;
+}
+.main-timeline .timeline:nth-child(2) {
+  --color1: #99bc52;
+  --color2: #297e34;
+}
+.main-timeline .timeline:nth-child(3) {
+  --color1: #d72c93;
+  --color2: #b0146f;
+}
+.main-timeline .timeline:nth-child(1) {
+  --color1: #4b9ced;
+  --color2: #1071ad;
+}
+@media screen and (max-width: 1110px) {
+  .education-container {
+    padding: 25px 0 25px 0;
+  }
+  .education-tagline {
+    font-size: 1.2em;
+  }
+  .main-timeline .timeline,
+  .main-timeline .timeline:nth-child(even) {
+    width: 100%;
+    padding: 60px 0 0 15px;
+    margin: 0 0 30px;
+    float: none;
+  }
+  .main-timeline .timeline-content h3 {
+    font-size: 1.6em;
+  }
+
+  .main-timeline .timeline-year,
+  .main-timeline .timeline:nth-child(even) .timeline-year {
+    transform: rotate(-20deg);
+    top: -45px;
+    left: 0;
+    right: auto;
+  }
+  .main-timeline .timeline-year:before,
+  .main-timeline .timeline-year:after {
+    right: -7px;
+    left: -1.5px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .education-container {
+    padding: 20px 0 20px 0;
+  }
+  .timeline-container {
+    margin: 20px 0 20px 0;
+  }
+  .main-timeline .timeline-content {
+    padding-top: 60px;
+  }
+
+  .main-timeline .timeline-content h3 {
+    font-size: 1.1em;
+  }
+  .timeline-container .row {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .education-tagline {
+    font-size: 0.9em;
+  }
+}

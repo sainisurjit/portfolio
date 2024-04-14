@@ -1,0 +1,247 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./../../../Assets/blury2.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0 20px 0;
+  width: 100vw;
+}
+
+.Contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
+  width: 90vw;
+  margin: 50px;
+}
+
+.contact-container .line-3 {
+  width: 90%;
+  border-width: 2px;
+  margin-top: 50px;
+}
+
+#inputName {
+  text-transform: capitalize;
+}
+
+.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 20%;
+}
+
+.contact-tagline {
+  font-size: 1.6em;
+  font-family: Pacifico;
+}
+
+.contact-heading-title {
+  color: rgb(17, 16, 16);
+  font-family: Pacifico;
+  z-index: 2;
+}
+
+.social-media-icons-2 {
+  display: flex;
+  height: 90%;
+  width: 10%;
+
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.link-2 i {
+  font-size: 48px;
+}
+.link-2 {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.link-2:hover {
+  transform: scale(1.2);
+}
+
+.line-2 {
+  width: 3px;
+  height: 90%;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: row;
+  width: calc(60vw + 10px);
+  min-width: 1000px;
+  height: 450px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 20px 10px 20px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  gap: 30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+.contact-form-info {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.footer-line {
+  width: 80%;
+}
+.contact-form-info button {
+  align-self: end;
+  width: 90px;
+  margin-top: 10px;
+}
+.contact-form-info input {
+  min-width: 450px;
+}
+.contact-form-info textarea {
+  height: 200px;
+  min-width: 450px;
+  max-height: 200px;
+  max-height: 300px;
+}
+
+.contact-form-info label {
+  font-family: Roboco Slab;
+}
+
+@media screen and (max-width: 1110px) {
+  .contact-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .contact-tagline {
+    font-size: 1.2em;
+  }
+
+  .contact-form {
+    width: calc(75vw + 50px);
+    min-width: 450px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-media-icons-2 {
+    padding: 10px 0px 10px 0px;
+  }
+  .contact-form-info {
+    margin: 20px;
+  }
+
+  .link-2 > i {
+    font-size: calc(3vw + 14px);
+  }
+
+  .contact-form-info input {
+    min-width: 100px;
+    margin-left: 10px;
+  }
+  .contact-form-info textarea {
+    height: calc(15vw + 20px);
+    min-width: 100px;
+    min-height: 100px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0 10px 0;
+  }
+  .Contact {
+    margin: 25px 10px 25px 10px;
+  }
+  .contact-form {
+    width: 100%;
+    height: 95%;
+    min-width: 300px;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 0px !important;
+  }
+  .contact-form-info {
+    margin: 20px;
+    flex-direction: column;
+  }
+  .contact-form-info input {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .contact-form-info textarea {
+    margin-left: 0px;
+    height: 120px;
+    width: 100%;
+    max-height: 150px;
+  }
+  .social-media-icons-2 {
+    flex-direction: row;
+    width: 100%;
+  }
+  .link-2 {
+    margin: 10px;
+  }
+  .social-media-icons-2 {
+    margin-top: 10px;
+  }
+  .link-2 i {
+    font-size: calc(3vw + 30px);
+    padding: 0px;
+  }
+  .line-2 {
+    height: 3px;
+    width: 90%;
+    margin: 0px;
+  }
+  .contact-form-info {
+    margin-left: 20px;
+  }
+  .contact-form-info button {
+    margin-bottom: 20px;
+  }
+  form {
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+  }
+  .contact-container .line-3 {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact-tagline {
+    font-size: 0.9em;
+  }
+}

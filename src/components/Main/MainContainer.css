@@ -1,0 +1,22 @@
+.main-container {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    background-color: #f9f9f9;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+@media  screen and (max-width:1110px) {
+    .main-container{
+        gap: 30px;
+    }
+}
+
+
+@media  screen and (max-width:500px) {
+    .main-container{
+        gap: 15px;
+    }
+}
