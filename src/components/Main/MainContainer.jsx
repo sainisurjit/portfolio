@@ -90,6 +90,11 @@ export default function MainContainer() {
           onComponentClick={handleScrollToComponent}
           educationRef={resumeComponentRef}
         />
+        <Resume
+          id="education"
+          ref={resumeComponentRef}
+          tagline={tagLines.education}
+        />
         <Contact
           id="contactme"
           ref={contactComponentRef}

@@ -1,7 +1,8 @@
-import React, { forwardRef, useContext } from "react";
+import { forwardRef, useContext } from "react";
 import "./AboutMe.css";
 import { ThemeContext } from "../Main/MainContainer";
 
+// eslint-disable-next-line react/display-name
 const AboutMe = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
@@ -46,16 +47,17 @@ const AboutMe = forwardRef((props, ref) => {
           <section id="card1" className="card" style={imageStyle}>
             <img src="#" alt="Not found!"></img>
             <div className="card__content" style={imageStyle}>
-              <p className="card__title">Vikas Saini</p>
+              <p className="card__title">Surjit Saini</p>
 
               <p className="card__description" style={imageStyle.textColor}>
-                <i className="bi bi-check-circle-fill"></i> AI/ML Developer
+                <i className="bi bi-check-circle-fill"></i> Urban Planner
               </p>
               <p className="card__description" style={imageStyle.textColor}>
-                <i className="bi bi-check-circle-fill"></i> Full-stack Developer
+                <i className="bi bi-check-circle-fill"></i> Remote Sensing & GIS
+                Expert
               </p>
               <p className="card__description" style={imageStyle.textColor}>
-                <i className="bi bi-check-circle-fill"></i> Software Developer
+                <i className="bi bi-check-circle-fill"></i> Geographer
               </p>
               <button
                 onClick={() => props.onComponentClick(props.educationRef)}
@@ -68,7 +70,7 @@ const AboutMe = forwardRef((props, ref) => {
         </div>
         <div className="about" style={styles.textcolor}>
           <p style={styles.pStyle}>
-            Dr. Saini has more than 15-years professional experience of applied
+            Dr. Saini has more than 22-years professional experience of applied
             GIS and Remote Sensing (i.e.Satellite/LiDAR/Drone) Technologies in
             planning, design,construction supervision for multi-sector projects
             which included Smart City Planning, Master Planning, SEZ Planning,

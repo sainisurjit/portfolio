@@ -1,8 +1,8 @@
 import { forwardRef, useContext } from "react";
-import React from "react";
 import "./Resume.css";
 import { ThemeContext } from "../Main/MainContainer";
 
+// eslint-disable-next-line react/display-name
 const Resume = forwardRef((props, ref) => {
   const darkTheme = useContext(ThemeContext);
 
@@ -19,31 +19,39 @@ const Resume = forwardRef((props, ref) => {
   };
   const Education = [
     {
-      Institution: "Carleton University",
-      Location: "Ottawa",
-      Program: "Bachelor of Computer Science",
-      Stream: "Artificial Intelligence and Machine Learning",
-      CGPA: "10.6/12.0",
-      Award: "Entrance Scholarship Award",
-      Year: "2023",
-    },
-    {
-      Institution: "Algonquin College",
-      Location: "Ottawa",
-      Program: "Electro-Mechanical Technician",
-      Stream: "Electro-Mechanical (Robotics)",
-      CGPA: "3.92/4.00",
-      Award: "Allen Ryan Scholarship Award",
+      Institution: "Kurukshetra University",
+      Location: "Kurukshetra",
+      Program: "Ph.D (Geography)",
+      Stream: "Risk and Vulnerability Assessment of Flood Hazard",
       Year: "2017",
     },
     {
-      Institution: "Shanti Gyan Niketan Public School",
+      Institution: "Institute of Town Planners India",
       Location: "New Delhi",
-      Program: "High School",
-      Stream: "Non-Medical (Physics, Chemistry and Math)",
-      CGPA: "9.1/10.0",
-      Award: "",
-      Year: "2014",
+      Program: "Master Degree in Town & Country Planning",
+      Stream: "Urban Planning",
+      Year: "2015",
+    },
+    {
+      Institution: "Indian Institute of Remote Sensing",
+      Location: "Dehradun",
+      Program: "Diploma in Remote Sensing & GIS",
+      Stream: "Remote Sensing & GIS",
+      Year: "2002",
+    },
+    {
+      Institution: "Kurukshetra University",
+      Location: "Kurukshetra",
+      Program: "Master of Science",
+      Stream: "Geography",
+      Year: "2000",
+    },
+    {
+      Institution: "Kurukshetra University",
+      Location: "Kurukshetra",
+      Program: "Bachelor of Science",
+      Stream: "Geography",
+      Year: "1997",
     },
   ];
 
@@ -74,7 +82,6 @@ const Resume = forwardRef((props, ref) => {
                     <h6 className="institute">
                       {edu.Institution}, {edu.Location}
                     </h6>
-                    <p className="description">CGPA: {edu.CGPA}</p>
                   </div>
                 </div>
               ))}

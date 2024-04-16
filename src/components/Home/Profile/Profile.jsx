@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "react-tippy/dist/tippy.css";
 import { Tooltip } from "react-tippy";
 import "./Profile.css";
+import CV from "./../../../assets/CV_Dr_Saini.pdf";
 import { ThemeContext } from "../../Main/MainContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
@@ -145,7 +146,7 @@ function Profile(props) {
                 style.btnTheme.color +
                 " resume-btn"
               }
-              //need a href here
+              href={CV}
               style={style.resumeBtn}
               onMouseOver={() => setResumeBtnColor("#369bdd")}
               onMouseOut={() => setResumeBtnColor()}
@@ -185,7 +186,7 @@ function Profile(props) {
             <p>Lines of code</p>
           </div>
           <div className="second">
-            <h3 className="main-line">3+</h3>
+            <h3 className="main-line">20+</h3>
             <p>Years of experience</p>
           </div>
           <div className="third">

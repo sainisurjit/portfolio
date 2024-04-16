@@ -8,6 +8,8 @@ import {
   faCode,
   faBriefcase,
   faMessage,
+  faSun,
+  faMoon,
   faCircleHalfStroke,
 } from "@fortawesome/free-solid-svg-icons";
 import Container from "react-bootstrap/Container";
@@ -253,7 +255,11 @@ export default function MyNavbar(props) {
                   )}
                 </Navbar.Text>
                 <div className="dark-theme">
-                  <span style={style}> {icons.circleHalfStroke} Dark Mode</span>
+                  <FontAwesomeIcon
+                    icon={faSun}
+                    color={!darkTheme && "#0f6efd"}
+                    size="md"
+                  />
                   <div className="toggle-switch">
                     <input
                       id="toggle-switch"
@@ -269,6 +275,11 @@ export default function MyNavbar(props) {
                       <span className="toggle-switch-inner"></span>
                     </label>
                   </div>
+                  <FontAwesomeIcon
+                    icon={faMoon}
+                    color={darkTheme && "#0f6efd"}
+                    size="md"
+                  />
                 </div>
               </Nav>
             </Offcanvas.Body>

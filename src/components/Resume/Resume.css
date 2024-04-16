@@ -56,7 +56,6 @@
   width: 50%;
   float: left;
   padding: 70px 0 0;
-  transition: transform 300ms ease-in-out;
 }
 .main-timeline .timeline-content {
   color: #0d0c0c;
@@ -71,13 +70,6 @@
   font-size: 1.7em;
   font-weight: bolder !important;
   color: var(--color2);
-}
-
-.timeline:nth-child(even):hover {
-  transform: rotate(-5deg);
-}
-.timeline:nth-child(odd):hover {
-  transform: rotate(5deg);
 }
 
 .timeline .title {
@@ -152,6 +144,16 @@
 .main-timeline .timeline:nth-child(1) {
   --color1: #4b9ced;
   --color2: #1071ad;
+}
+
+.main-timeline .timeline:nth-child(4) {
+  --color1: #eca534;
+  --color2: #e08b14;
+}
+
+.main-timeline .timeline:nth-child(5) {
+  --color1: #ed4b6e;
+  --color2: #ad1035;
 }
 @media screen and (max-width: 1110px) {
   .education-container {

@@ -1,22 +1,19 @@
-
 .navbar {
-  margin-bottom: 0px !important; 
+  margin-bottom: 0px !important;
   height: 57px;
 }
 
 .svg-inline--fa {
-  margin-right: 12px;
-  
+  margin-right: 0px;
 }
 
-.navbar-brand  {
+.navbar-brand {
   font-family: Rubik Vinyl;
   font-size: 24px;
 }
 
 .container-fluid {
   margin: 0px 100px 0px 100px;
-  
 }
 
 .active {
@@ -32,115 +29,105 @@
   width: 70% !important;
 }
 
-.offcanvas-body div {
+.offcanvas-body > div {
   gap: 15px;
-  margin-right: 0px;
   padding-right: 0 !important;
 }
 
 .dark-theme {
   display: flex;
   flex-direction: row;
+  margin-left: 10px;
   align-items: center;
 }
 .toggle-switch {
-    position: relative;
-    width: 52px;
-    height: 25px;
-    margin: 8px 10px 8px 0px;
+  position: relative;
+  width: 52px;
+  height: 25px;
+  margin: 8px 7px 8px 7px;
+}
 
-  }
-  
-  .toggle-switch input[type="checkbox"] {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  
-  .toggle-switch-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ddd;
-    border-radius: 34px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-  }
-  
-  .toggle-switch-label:before,
-  .toggle-switch-label:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-  }
-  
-  .toggle-switch-label:before {
-    left: 0px;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.4s ease;
-  }
-  
-  .toggle-switch-label:after {
-    left: 0;
-    width: 28px;
-    height: 25px;
-    background-color: #fff;
-    border-radius: 34px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s ease;
-  }
-  
-  .toggle-switch-checkbox:checked + .toggle-switch-label:before {
-    transform: translateX(29px);
-  }
-  
-  .toggle-switch-checkbox:checked + .toggle-switch-label {
-    background-color: #60dd54;
-  }
-  
-  .toggle-switch-checkbox:checked + .toggle-switch-label:after {
-    transform: scale(0);
-  }
-  
+.toggle-switch input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-  
-  .toggle-switch-checkbox:checked + .toggle-switch-label + .toggle-switch-text {
-    color: rgb(255, 255, 255);
+.toggle-switch-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ddd;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.toggle-switch-label:before,
+.toggle-switch-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.toggle-switch-label:before {
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.toggle-switch-label:after {
+  left: 0;
+  width: 28px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 34px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label:before {
+  transform: translateX(29px);
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label {
+  background-color: #60dd54;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label:after {
+  transform: scale(0);
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label + .toggle-switch-text {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1300px) {
+  .container-fluid {
+    margin: 0px 40px 0px 40px;
   }
-  
-  @media screen and (max-width: 1300px) {
-    .container-fluid {
-      margin: 0px 40px 0px 40px;
-    }
+}
+
+@media screen and (max-width: 1110px) {
+  .container-fluid {
+    margin: 0px 20px 0px 20px;
   }
+}
 
-  @media screen and (max-width: 1110px) {
-    .container-fluid {
-      margin: 0px 20px 0px 20px;
-    }
+@media script and (max-width: 750px) {
+}
+
+@media screen and (max-width: 450px) {
+  .container-fluid {
+    margin: 0px 10px 0px 10px;
   }
-
-  @media script and (max-width: 750px) {
-    
-  }
-
-
-  @media screen and (max-width: 450px) {
-    .container-fluid {
-      margin: 0px 10px 0px 10px;
-      
-    }
-
-    
-
-    
-  }
+}

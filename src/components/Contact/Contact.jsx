@@ -237,7 +237,7 @@ const Contact = forwardRef((props, ref) => {
       <span style={style.footerStyle}>
         Copyright{" "}
         <i className="bi bi-c-circle" style={{ fontSize: "0.8rem" }}></i> 2023
-        Vikas Saini
+        Surjit Saini
       </span>
     </div>
   );
