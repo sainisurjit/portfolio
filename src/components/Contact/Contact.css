@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("./../../../Assets/blury2.svg");
+  background-image: url("./../../assets/blury2.svg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
